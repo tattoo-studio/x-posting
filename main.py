@@ -39,7 +39,7 @@ def generate_post_with_gemini(trends, link):
         raise ValueError("GEMINI_API_KEY tidak ditemukan di environment variables!")
         
     genai.configure(api_key=gemini_api_key)
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash-latest')
     
     # Buat prompt yang jelas untuk Gemini
     prompt = (
